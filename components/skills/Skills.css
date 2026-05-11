@@ -1,0 +1,92 @@
+@reference "../../app/globals.css";
+
+.skills-section {
+  @apply py-20 bg-gray-50 dark:bg-gray-800;
+}
+
+.skills-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.skills-grid {
+  @apply grid lg:grid-cols-3 gap-8;
+}
+
+.skills-tags-slot {
+  @apply mt-16 text-center;
+}
+
+.skills-card {
+  @apply rounded-2xl p-8;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-name: reveal-up;
+  animation-timing-function: ease-out;
+}
+
+.dark .skills-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-card-header {
+  @apply text-center mb-8;
+}
+
+.skills-card-icon {
+  @apply text-4xl flex justify-center mb-4;
+}
+
+.skills-card-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.skills-list {
+  @apply space-y-4;
+}
+
+.skills-helper {
+  @apply mt-8 pt-6 border-t border-gray-200 dark:border-gray-700;
+}
+
+.skills-helper-text {
+  @apply text-xs text-gray-500 dark:text-gray-400 text-center italic;
+}
+
+.skills-tags {
+  @apply inline-flex flex-wrap gap-3 justify-center;
+}
+
+.skill-row {
+  @apply block;
+}
+
+.skill-label-row {
+  @apply flex justify-between items-center mb-2;
+}
+
+.skill-label {
+  @apply text-gray-700 dark:text-gray-300 font-medium;
+}
+
+.skill-meter {
+  @apply w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden;
+}
+
+.skill-meter-fill {
+  @apply h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full;
+  animation: skill-bar-grow 1000ms ease-out both;
+  transform-origin: left;
+}
+
+@keyframes skill-bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

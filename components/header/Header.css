@@ -1,0 +1,53 @@
+@reference "../../app/globals.css";
+
+.header {
+  @apply fixed top-0 w-full z-50 bg-white/85 shadow-sm dark:bg-gray-900/85;
+}
+
+.navbar {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.navbar-content {
+  @apply flex h-16 items-center justify-between;
+}
+
+.logo-wrap {
+  @apply flex-shrink-0;
+}
+
+.logo-link {
+  @apply text-xl font-bold transition-transform duration-200 hover:scale-105;
+}
+
+.logo-image {
+  @apply h-40 w-60 object-contain;
+}
+
+.desktop-nav {
+  @apply hidden md:block;
+}
+
+.desktop-nav-list {
+  @apply ml-10 flex items-baseline space-x-4;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-blue-600 transition-colors duration-200 focus:outline-none dark:text-gray-300 dark:hover:text-blue-400;
+}
+
+.nav-link-desktop {
+  @apply px-3 py-2 rounded-md text-sm font-medium focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.nav-link-mobile {
+  @apply block px-3 py-2 rounded-md text-base font-medium focus:text-blue-400;
+}
+
+.mobile-menu-shell {
+  @apply absolute left-0 right-0 top-16 md:hidden;
+}
+
+.mobile-menu-panel {
+  @apply mx-4 rounded-lg bg-white px-2 pt-2 pb-3 shadow-lg dark:bg-gray-900;
+}

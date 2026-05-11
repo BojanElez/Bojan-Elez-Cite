@@ -1,0 +1,248 @@
+@reference "../../app/globals.css";
+
+.projects-section {
+  @apply py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300;
+}
+
+.projects-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.projects-header {
+  @apply transition-all duration-1000;
+}
+
+.projects-header-visible {
+  @apply opacity-100 translate-y-0;
+}
+
+.projects-header-hidden {
+  @apply opacity-0 translate-y-10;
+}
+
+.projects-title {
+  @apply text-center mb-16;
+}
+
+.projects-heading {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.projects-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto;
+}
+
+.projects-filters {
+  @apply flex flex-wrap gap-3 justify-center mb-12;
+}
+
+.projects-filter-btn {
+  @apply px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.projects-filter-active {
+  @apply text-white;
+  background: linear-gradient(135deg, var(--color-blue-600), var(--color-purple-600));
+}
+
+.projects-filter-inactive {
+  @apply bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-blue-500;
+}
+
+.projects-grid {
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.project-card {
+  @apply rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+}
+
+.project-card-visible {
+  @apply opacity-100 translate-y-0;
+}
+
+.project-card-hidden {
+  @apply opacity-0 translate-y-10;
+}
+
+.project-image-container {
+  @apply relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700;
+}
+
+.project-image {
+  @apply w-full h-full object-cover transition-transform duration-500;
+}
+
+.project-card:hover .project-image {
+  @apply scale-110;
+}
+
+.project-overlay {
+  @apply absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center space-x-4;
+}
+
+.project-card:hover .project-overlay {
+  @apply opacity-100;
+}
+
+.project-overlay-btn {
+  @apply px-4 py-2 rounded-lg font-semibold transition-all duration-300;
+}
+
+.project-overlay-demo {
+  @apply text-white hover:shadow-lg;
+  background: linear-gradient(135deg, var(--color-blue-600), var(--color-purple-600));
+}
+
+.project-overlay-github {
+  @apply border-2 border-white text-white hover:bg-white hover:text-gray-900;
+}
+
+.project-content {
+  @apply p-6 bg-white dark:bg-gray-900;
+}
+
+.project-category {
+  @apply inline-block px-3 py-1 text-xs font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full mb-3;
+}
+
+.project-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.project-description {
+  @apply text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed;
+}
+
+.project-features-title {
+  @apply text-sm font-semibold text-gray-900 dark:text-white mb-2 uppercase tracking-wide;
+}
+
+.project-features {
+  @apply space-y-1 mb-4;
+}
+
+.project-feature-item {
+  @apply flex items-start space-x-2;
+}
+
+.project-feature-dot {
+  @apply w-1 h-1 bg-blue-500 rounded-full mt-2 flex-shrink-0;
+}
+
+.project-feature-text {
+  @apply text-xs text-gray-600 dark:text-gray-400;
+}
+
+.project-technologies {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.project-tech-tag {
+  @apply px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded;
+}
+
+.project-status {
+  @apply inline-block px-3 py-1 text-xs font-semibold rounded-full;
+}
+
+.project-status-completed {
+  @apply bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200;
+}
+
+.project-status-inprogress {
+  @apply bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200;
+}
+
+.project-status-progress {
+  @apply bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200;
+}
+
+.project-status-ongoing {
+  @apply bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200;
+}
+
+.project-image-content {
+  @apply text-white text-center;
+}
+
+.project-image-emoji {
+  @apply text-4xl mb-2;
+}
+
+.project-image-text {
+  @apply text-sm opacity-75;
+}
+
+.project-status-badge {
+  @apply absolute bottom-4 left-4;
+}
+
+.project-card-header {
+  @apply mb-4;
+}
+
+.project-title-wrapper {
+  @apply flex items-center justify-between mb-2;
+}
+
+.project-category-badge {
+  @apply inline-block px-3 py-1 text-xs font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full;
+}
+
+.project-technologies-title {
+  @apply text-sm font-semibold text-gray-900 dark:text-white mb-2;
+}
+
+.project-actions {
+  @apply flex space-x-3;
+}
+
+.project-link-github {
+  @apply flex-1 flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200;
+}
+
+.project-link-demo {
+  @apply flex-1 flex items-center justify-center px-4 py-2 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-200;
+  background: linear-gradient(135deg, var(--color-blue-600), var(--color-purple-600));
+}
+
+.project-link-icon {
+  @apply w-4 h-4 mr-2;
+}
+
+.projects-note {
+  @apply mt-16 text-center;
+}
+
+.projects-note-card {
+  @apply rounded-2xl p-8 max-w-3xl mx-auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .projects-note-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects-note-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.projects-note-text {
+  @apply text-gray-600 dark:text-gray-300 leading-relaxed mb-4;
+}
+
+.projects-filters-wrapper {
+  @apply flex flex-wrap justify-center gap-2 mb-12;
+}
+
+.project-features-section {
+  @apply mb-4;
+}
+
+.project-technologies-section {
+  @apply mb-6;
+}

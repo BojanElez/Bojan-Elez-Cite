@@ -1,0 +1,145 @@
+@reference "../../app/globals.css";
+
+.experience-section {
+  @apply py-20 bg-white dark:bg-gray-900;
+}
+
+.experience-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.experience-note {
+  @apply text-center mt-12;
+}
+
+.experience-note-text {
+  @apply text-gray-600 dark:text-gray-300 mb-4;
+}
+
+.resume-download {
+  @apply px-8 py-3;
+}
+
+.experience-summary {
+  @apply mt-16 text-center;
+}
+
+.experience-summary-card {
+  @apply max-w-4xl mx-auto;
+}
+
+.experience-summary-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.experience-summary-text {
+  @apply text-lg text-gray-600 dark:text-gray-300 leading-relaxed;
+}
+
+.experience-summary-stats {
+  @apply mt-8;
+}
+
+.experience-timeline {
+  @apply relative;
+}
+
+.experience-timeline-line {
+  @apply absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-600;
+}
+
+.experience-timeline-items {
+  @apply space-y-12;
+}
+
+.experience-timeline-item {
+  @apply relative flex flex-col md:flex-row items-start md:items-center;
+}
+
+.experience-timeline-even {
+  @apply md:flex-row;
+}
+
+.experience-timeline-odd {
+  @apply md:flex-row-reverse;
+}
+
+.experience-timeline-dot {
+  @apply absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10;
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-name: reveal-scale;
+  animation-timing-function: ease-out;
+}
+
+.experience-card-shell {
+  @apply ml-16 md:ml-0 md:w-5/12;
+}
+
+.experience-card-shell-even {
+  @apply md:mr-auto md:pr-8;
+}
+
+.experience-card-shell-odd {
+  @apply md:ml-auto md:pl-8;
+}
+
+.experience-card-hover {
+  @apply hover:scale-105;
+}
+
+.experience-card-header {
+  @apply mb-6;
+}
+
+.experience-card-meta {
+  @apply flex flex-wrap items-center gap-2 mb-2;
+}
+
+.experience-location {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+.experience-job-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-1;
+}
+
+.experience-company-row {
+  @apply flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2;
+}
+
+.experience-company {
+  @apply text-lg font-semibold;
+}
+
+.experience-period {
+  @apply text-sm text-gray-600 dark:text-gray-400 font-medium;
+}
+
+.experience-description {
+  @apply text-gray-600 dark:text-gray-300 mb-6 leading-relaxed;
+}
+
+.experience-detail-section {
+  @apply mb-6;
+}
+
+.experience-detail-title {
+  @apply text-sm font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide;
+}
+
+.achievement-list {
+  @apply space-y-2;
+}
+
+.achievement-item {
+  @apply flex items-start space-x-3;
+}
+
+.achievement-dot {
+  @apply w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0;
+}
+
+.achievement-text {
+  @apply text-gray-600 dark:text-gray-300 text-sm leading-relaxed;
+}

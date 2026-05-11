@@ -1,0 +1,161 @@
+@reference "../../app/globals.css";
+
+.contact-section {
+  @apply py-20 bg-white dark:bg-gray-900;
+}
+
+.contact-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.contact-grid {
+  @apply grid lg:grid-cols-2 gap-12;
+}
+
+.contact-brand-icon {
+  @apply w-6 h-6;
+}
+
+.contact-column-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-8;
+}
+
+.contact-form-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.contact-list {
+  @apply space-y-6 mb-8;
+}
+
+.contact-info-item {
+  @apply flex items-start space-x-4;
+}
+
+.contact-info-icon {
+  @apply w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white transition-transform duration-300;
+}
+
+.contact-info-item:hover .contact-info-icon {
+  @apply scale-110;
+}
+
+.contact-info-body {
+  @apply flex-1;
+}
+
+.contact-info-label {
+  @apply text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide;
+}
+
+.contact-info-link {
+  @apply text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors;
+}
+
+.contact-info-value {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.contact-project-title {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.contact-project-copy {
+  @apply text-gray-600 dark:text-gray-300 mb-4 leading-relaxed;
+}
+
+.contact-action-row {
+  @apply flex flex-col sm:flex-row gap-3;
+}
+
+.contact-action-primary {
+  @apply flex-1 text-white px-6 py-3 rounded-lg font-semibold text-center hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.contact-action-secondary {
+  @apply flex-1 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.contact-form-card {
+  @apply space-y-6;
+}
+
+.contact-form {
+  @apply space-y-6;
+}
+
+.contact-form-grid {
+  @apply grid md:grid-cols-2 gap-6;
+}
+
+.contact-submit {
+  @apply py-3;
+}
+
+.contact-submit-pending {
+  @apply flex items-center justify-center;
+}
+
+.contact-submit-spinner {
+  @apply -ml-1 mr-3 h-5 w-5 animate-spin;
+}
+
+.file-input-wrap {
+  @apply relative;
+}
+
+.file-input-hidden {
+  @apply hidden;
+}
+
+.file-input-note {
+  @apply text-gray-400 font-normal;
+}
+
+.file-attached {
+  @apply flex items-center justify-between px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 transition-colors duration-200;
+}
+
+.file-attached-content {
+  @apply flex items-center space-x-3 min-w-0;
+}
+
+.file-attached-icon {
+  @apply w-5 h-5 text-blue-500 flex-shrink-0;
+}
+
+.file-attached-name {
+  @apply text-sm text-gray-700 dark:text-gray-300 truncate;
+}
+
+.file-attached-size {
+  @apply text-xs text-gray-400 flex-shrink-0;
+}
+
+.file-remove {
+  @apply ml-3 text-gray-400 hover:text-red-500 transition-colors duration-200 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-red-500 rounded;
+}
+
+.file-picker {
+  @apply w-full flex items-center justify-center space-x-2 px-4 py-3 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 bg-white dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.file-picker-text {
+  @apply text-sm font-medium;
+}
+
+.form-status-success {
+  @apply p-4 bg-green-50 dark:bg-green-900 border border-green-200 dark:border-green-700 rounded-lg;
+}
+
+.form-status-success-text {
+  @apply flex items-center gap-2 text-green-800 dark:text-green-200 text-sm;
+}
+
+.form-status-error {
+  @apply p-4 bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-700 rounded-lg;
+}
+
+.form-status-error-text {
+  @apply flex items-center gap-2 text-red-800 dark:text-red-200 text-sm;
+}

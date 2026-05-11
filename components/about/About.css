@@ -1,0 +1,61 @@
+@reference "../../app/globals.css";
+
+.about-section {
+  @apply py-20 bg-white dark:bg-gray-900;
+}
+
+.about-container {
+  @apply container mx-auto p-8 sm:px-6 lg:px-8 relative z-10;
+}
+
+.about-grid {
+  @apply grid lg:grid-cols-2 gap-12 mt-12;
+}
+
+.about-column {
+  @apply space-y-6;
+}
+
+.about-column-title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+.about-column-title-left {
+  @apply text-left;
+}
+
+.about-journey-text {
+  @apply space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed;
+}
+
+.about-strengths {
+  @apply grid gap-6;
+}
+
+.about-strength-content {
+  @apply flex items-start space-x-4;
+}
+
+.about-strength-title {
+  @apply text-lg font-semibold text-gray-900 dark:text-white mb-2;
+}
+
+.about-strength-description {
+  @apply text-gray-600 dark:text-gray-300 leading-relaxed;
+}
+
+.about-cta {
+  @apply text-center mt-16;
+}
+
+.about-cta-panel {
+  @apply inline-flex items-center space-x-4 px-8 py-4 bg-gray-200 dark:bg-gray-800 rounded-full;
+}
+
+.about-cta-text {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+.about-cta-button {
+  @apply px-6 py-2 rounded-full font-medium;
+}

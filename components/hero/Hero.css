@@ -1,0 +1,89 @@
+@reference "../../app/globals.css";
+
+.hero-section {
+  @apply min-h-screen flex items-center justify-center relative overflow-hidden;
+}
+
+.hero-background {
+  @apply absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-sky-50 dark:from-gray-950 dark:via-gray-900 dark:to-slate-900;
+}
+
+.hero-orbit {
+  @apply absolute inset-0 overflow-hidden opacity-70 dark:opacity-40;
+}
+
+.hero-orbit-sky {
+  @apply absolute -top-28 -right-24 h-72 w-72 rounded-full bg-sky-100 dark:bg-sky-800/40;
+}
+
+.hero-orbit-indigo {
+  @apply absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-indigo-100 dark:bg-indigo-800/30;
+}
+
+.hero-container {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8 relative z-10;
+}
+
+.hero-content {
+  @apply text-left;
+}
+
+.hero-profile-slot {
+  @apply mt-12 mb-8;
+}
+
+.hero-title {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4;
+}
+
+.hero-role-line {
+  @apply text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6 h-16 flex items-center;
+}
+
+.hero-role-prefix {
+  @apply mr-2;
+}
+
+.hero-description {
+  @apply text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mb-8 leading-relaxed;
+}
+
+.hero-social-slot {
+  @apply mt-12;
+}
+
+.hero-scroll-indicator {
+  @apply absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce;
+}
+
+.hero-scroll-link {
+  @apply text-gray-600 hover:text-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded dark:text-gray-400 dark:hover:text-blue-400;
+}
+
+.hero-actions {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.hero-primary-action {
+  @apply px-8 py-3 text-lg hover:scale-105;
+}
+
+.hero-secondary-action {
+  @apply px-8 py-3 text-lg;
+}
+
+.profile-badge {
+  @apply w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 mb-6;
+}
+
+.profile-badge-inner {
+  @apply w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-4xl font-bold text-blue-600 dark:text-blue-400;
+}
+
+.typewriter-text {
+  @apply font-semibold;
+}
+
+.typewriter-cursor {
+  @apply animate-pulse;
+}
