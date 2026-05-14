@@ -8,7 +8,7 @@
   @apply container mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-.experience-note {
+.experience-resume{
   @apply text-center mt-12;
 }
 
@@ -65,8 +65,10 @@
 }
 
 .experience-timeline-dot {
-  @apply absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10;
+  @apply absolute left-6 transform  w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10;
   animation-duration: 700ms;
+  left: 50%;
+  transform: translate(-50%);
   animation-fill-mode: both;
   animation-name: reveal-scale;
   animation-timing-function: ease-out;
@@ -82,10 +84,6 @@
 
 .experience-card-shell-odd {
   @apply md:ml-auto md:pl-8;
-}
-
-.experience-card-hover {
-  @apply hover:scale-105;
 }
 
 .experience-card-header {
@@ -117,7 +115,7 @@
 }
 
 .experience-description {
-  @apply text-gray-600 dark:text-gray-300 mb-6 leading-relaxed;
+  @apply text-gray-800 dark:text-gray-300 mb-6 leading-relaxed;
 }
 
 .experience-detail-section {
@@ -141,5 +139,5 @@
 }
 
 .achievement-text {
-  @apply text-gray-600 dark:text-gray-300 text-sm leading-relaxed;
+  @apply text-gray-700 dark:text-gray-300 text-sm leading-relaxed;
 }

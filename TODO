@@ -1,19 +1,16 @@
 
 
 IN MVP STAGE
-0. Experience according to resume
-1. Not use Tailwind Classes
-
-2. Deploy to GitHub & HOST SITE
-3. Email 
-4. Add updated resume -> Add Note
-5. Style Git Hub & Linkedin according to resume
+1. Who I'm I section
+2. Email 
+3. Add updated resume -> Add Note
+4. Style Git Hub & Linkedin according to resume
   - Add Website
   - One month premium
-6. Test And refactor
-7. Setup Linter, Prettier, Husky
-8. Footer should Source Code
-9. Security
+5. Test And refactor
+6. Setup Linter, Prettier, Husky
+7. Footer should Source Code
+8. Security
 
 AFTER MVP
 1. AI analyze CV and job

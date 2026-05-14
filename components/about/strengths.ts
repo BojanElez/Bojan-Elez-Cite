@@ -14,5 +14,9 @@ export const strengths = [
 	{
 		title: "Continuous Learning",
 		description: "Always staying current with the latest technologies and best practices in fullstack development and user experience."
+	},
+	{
+		title: "System Thinking",
+		description: "Ability to see the big picture and understand how individual components interact within a larger system, enabling better architectural decisions and scalable solutions."
 	}
 ];

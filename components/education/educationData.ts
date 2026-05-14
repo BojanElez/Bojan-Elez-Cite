@@ -42,5 +42,14 @@ export const certifications: CertificationItem[] = [
 		credentialId: "",
 		link: "",
 		description: "Validates foundational understanding of AWS Cloud concepts, services, security, architecture, pricing, system design, and support."
+	},
+	{
+		name: "Google AI Essentials Specialization",
+		issuer: "Google",
+		date: "2026",
+		expiry: "N/A",
+		credentialId: "",
+		link: "",
+		description: "Covers foundational AI concepts and practical applications using Google's AI tools, including prompt engineering, responsible AI use, and integrating AI into everyday workflows."
 	}
 ];

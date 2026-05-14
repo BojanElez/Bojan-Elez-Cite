@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import { navItems } from "./navItems";
+import MobileMenuToggle from "./MobileMenuToggle";
 
 const Header = () => {
   return (
@@ -33,6 +34,7 @@ const Header = () => {
             </div>
           </div>
 
+          <MobileMenuToggle />
         </div>
       </nav>
     </header>

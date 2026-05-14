@@ -27,6 +27,9 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Bojan Elez | Fullstack Engineer",
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
   description: "Experienced Fullstack Engineer specializing in React, Next.js, and modern web technologies. Building user-focused applications with clean, performant code.",
   keywords: ["Fullstack Engineer", "React Developer", "Next.js", "TypeScript", "JavaScript", "Web Development"],
   authors: [{ name: "Bojan Elez" }],

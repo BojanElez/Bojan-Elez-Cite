@@ -25,7 +25,7 @@
 }
 
 .about-journey-text {
-  @apply space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed;
+  @apply space-y-4 text-gray-800 dark:text-gray-500 leading-relaxed;
 }
 
 .about-strengths {
@@ -41,7 +41,7 @@
 }
 
 .about-strength-description {
-  @apply text-gray-600 dark:text-gray-300 leading-relaxed;
+  @apply text-gray-800 dark:text-gray-500 leading-relaxed;
 }
 
 .about-cta {

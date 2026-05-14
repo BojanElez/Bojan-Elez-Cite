@@ -34,9 +34,10 @@ const Hero = () => {
             </div>
 
             <p className="hero-description">
-              Passionate about building scalable full-stack applications through clean, efficient code and thoughtful architecture. 
-              I develop seamless user experiences backend by robust backend systems, 
-              creating solutions that solve real-world problems and deliver reliable, high-performance products end-to-end.
+              Passionate about building scalable full-stack applications through clean, 
+              efficient code and thoughtful architecture. I create seamless user experiences 
+              supported by robust backend systems, delivering reliable, 
+              high-performance solutions that solve real-world problems end-to-end.
             </p>
           </div>
 

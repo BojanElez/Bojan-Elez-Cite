@@ -55,9 +55,9 @@ export const experiences: ExperienceItem[] = [
 		technologies: ["React", "TypeScript", "REST APIs", "CMS", "Accessibility", "Performance"]
 	},
 	{
-		title: "Full-Stack Developer",
+		title: "Software Engineer",
 		company: "Innovation Cloud",
-		period: "Dec 2018 - Dec 2020",
+		period: "Mar 2018 - Dec 2020",
 		location: "Kragujevac, Serbia",
 		type: "Full-time",
 		description: "Developed backend functionality and end-to-end features for an innovation management platform, progressing from intern to full-time developer.",

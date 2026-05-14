@@ -5,5 +5,7 @@ export const roles = [
 	"UI/UX Enthusiast",
 	"Cloud Enthusiast",
 	"AWS Certified Cloud Practitioner",
-	"Problem Solver"
+	"Problem Solver",
+	"Systems Thinker",
+	"the Guy you can rely on",
 ];

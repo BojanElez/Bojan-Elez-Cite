@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="footer-copyright">
               <p>
-                (c) {currentYear} Bojan Elez. All rights reserved. Built with
+                (c) {currentYear} Bojan Elez. All rights reserved. Built with love using
                 <span className="footer-next"> Next.js</span> and
                 <span className="footer-tailwind"> Tailwind CSS</span>.
               </p>

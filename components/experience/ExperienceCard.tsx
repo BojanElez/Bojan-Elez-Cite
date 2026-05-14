@@ -14,7 +14,7 @@ export default function ExperienceCard({ experience, index, isEven }: Experience
   return (
     <Card
       variant="glass"
-      className={`experience-card-hover ${isEven ? "reveal-left" : "reveal-right"}`}
+
       style={{ animationDelay: `${index * 150}ms` }}
     >
       <div className="experience-card-header">

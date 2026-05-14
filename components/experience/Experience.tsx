@@ -25,12 +25,7 @@ const Experience = () => {
 
           <ExperienceTimeline experiences={experiences} />
 
-          <div className="experience-note">
-            <p className="experience-note-text">
-              <strong>Important:</strong> Please replace all placeholder content
-              above with your actual work experience from your resume. Update job
-              titles, companies, dates, descriptions, and achievements.
-            </p>
+          <div className="experience-resume">
             <Button href="/Bojan_Elez_Resume.pdf" download="Bojan_Elez_Resume.pdf" className="resume-download">Download Full Resume</Button>
           </div>
 
