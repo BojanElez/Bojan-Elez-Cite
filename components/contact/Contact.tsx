@@ -1,6 +1,7 @@
 import Card from "@/components/ui/Card";
 import { MailIcon, MapPinIcon } from "@/components/ui/InlineIcons";
 import { GitHubIcon, LinkedInIcon } from "@/components/shared/BrandIcons";
+import { profile, profileHref } from "@/lib/profile";
 import Reveal from "@/components/shared/Reveal";
 import SectionTitle from "@/components/shared/SectionTitle";
 import ContactInfoItem from "./ContactInfoItem";
@@ -10,26 +11,26 @@ const contactInfo = [
   {
     icon: <MailIcon size={24} />,
     label: "Email",
-    value: "belez911@gmail.com",
-    link: "mailto:belez911@gmail.com",
+    value: profile.email,
+    link: profileHref.email,
   },
   {
     icon: <LinkedInIcon className="contact-brand-icon" />,
     label: "LinkedIn",
     value: "/in/bojan-elez",
-    link: "https://www.linkedin.com/in/bojan-elez/",
+    link: profile.links.linkedin,
   },
   {
     icon: <GitHubIcon className="contact-brand-icon" />,
     label: "GitHub",
     value: "/bojanelez",
-    link: "https://github.com/bojanelez",
+    link: profile.links.github,
   },
   {
     icon: <MapPinIcon size={24} />,
     label: "Location",
-    value: "Kragujevac, Serbia",
-    link: "#",
+    value: profile.location,
+    link: profile.links.map,
   },
 ];
 
@@ -72,13 +73,13 @@ const Contact = () => {
                 </p>
                 <div className="contact-action-row">
                   <a
-                    href="mailto:belez911@gmail.com?subject=Project Inquiry"
+                    href={profileHref.emailProjectInquiry}
                     className="contact-action-primary gradient-bg"
                   >
                     Email Me Directly
                   </a>
                   <a
-                    href="https://linkedin.com/in/bojan-elez"
+                    href={profile.links.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-action-secondary"

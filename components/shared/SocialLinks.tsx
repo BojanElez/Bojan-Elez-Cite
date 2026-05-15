@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { MailIcon } from "@/components/ui/InlineIcons";
 import { GitHubIcon, LinkedInIcon } from "./BrandIcons";
+import { profile, profileHref } from "@/lib/profile";
 
 export type SocialLink = {
   name: string;
@@ -17,19 +18,19 @@ type SocialLinksProps = {
 export const defaultSocialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    url: "https://github.com/bojanelez",
+    url: profile.links.github,
     Icon: GitHubIcon,
     external: true,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/bojan-elez",
+    url: profile.links.linkedin,
     Icon: LinkedInIcon,
     external: true,
   },
   {
     name: "Email",
-    url: "mailto:belez911@gmail.com",
+    url: profileHref.email,
     Icon: MailIcon,
   },
 ];

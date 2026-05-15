@@ -44,6 +44,10 @@
   @apply block px-3 py-2 rounded-md text-base font-medium focus:text-blue-400;
 }
 
+.mobile-menu-toggle {
+  @apply md:hidden;
+}
+
 .mobile-menu-shell {
   @apply absolute left-0 right-0 top-16 md:hidden;
 }

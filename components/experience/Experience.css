@@ -45,7 +45,7 @@
 }
 
 .experience-timeline-line {
-  @apply absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-600;
+  @apply hidden md:block absolute md:left-1/2 md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-600;
 }
 
 .experience-timeline-items {
@@ -65,7 +65,7 @@
 }
 
 .experience-timeline-dot {
-  @apply absolute left-6 transform  w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10;
+  @apply hidden md:block absolute w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10;
   animation-duration: 700ms;
   left: 50%;
   transform: translate(-50%);
@@ -75,7 +75,7 @@
 }
 
 .experience-card-shell {
-  @apply ml-16 md:ml-0 md:w-5/12;
+  @apply w-full md:ml-0 md:w-5/12;
 }
 
 .experience-card-shell-even {

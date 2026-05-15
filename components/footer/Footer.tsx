@@ -1,4 +1,5 @@
 import { ArrowUpIcon, LocateIcon } from "@/components/ui/InlineIcons";
+import { profile, profileHref } from "@/lib/profile";
 import FooterLinks from "./FooterLinks";
 import FooterSocialLinks from "./FooterSocialLinks";
 
@@ -39,10 +40,10 @@ const Footer = () => {
               <div>
                 <p className="footer-label">Email</p>
                 <a
-                  href="mailto:belez911@gmail.com"
+                  href={profileHref.email}
                   className="footer-link"
                 >
-                  belez911@gmail.com
+                  {profile.email}
                 </a>
               </div>
 
@@ -51,13 +52,13 @@ const Footer = () => {
                 <p className="footer-location">
                   <a
                     className="footer-location-icon"
-                    href="https://www.google.com/maps/@44.0261436,20.8969743,16z?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+                    href={profile.links.map}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <LocateIcon size={20} />
                   </a>
-                  Kragujevac, Serbia
+                  {profile.location}
                 </p>
               </div>
 

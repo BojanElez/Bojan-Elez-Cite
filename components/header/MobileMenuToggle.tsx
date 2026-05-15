@@ -13,7 +13,7 @@ export default function MobileMenuToggle() {
     <>
       <Button
         variant="ghost"
-        className="md:hidden"
+        className="mobile-menu-toggle"
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
